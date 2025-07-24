@@ -27,7 +27,7 @@ cd .\venv\Script\
 .\activate.bat
 
 4. Установите зависимости:\
-Выйти до корневой папки (cd ../../)
+Выйти до корневой папки (cd ../../) \
 pip install -r requirements.txt
 
 6. Настройте базу данных PostgreSQL:\
