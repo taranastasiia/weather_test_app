@@ -19,5 +19,5 @@
 
 1. Клонируйте репозиторий:
 bash
-git clone https://github.com/yourusername/weather-query-app.git
+git clone https://github.com/taranastasiia/weather-query-app.git
 cd weather-query-app 
