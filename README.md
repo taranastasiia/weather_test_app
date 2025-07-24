@@ -48,7 +48,6 @@ PORT='5432'
 Получить API-ключ можно на сайте: https://openweathermap.org/api
 
 6. Примените миграции:\
-python manage.py makemigrations
 python manage.py migrate
 
 8. Запустите сервер разработки:\
