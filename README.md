@@ -19,8 +19,8 @@
 
 1. Клонируйте репозиторий:
 bash
-git clone https://github.com/taranastasiia/weather-query-app.git
-cd weather-query-app 
+git clone https://github.com/taranastasiia/weather_test_app.git
+cd weather_test_app 
 
 2. Создайте и активируйте виртуальное окружение
 python -m venv venv
