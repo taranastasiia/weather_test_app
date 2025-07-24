@@ -18,7 +18,7 @@
 ## Установка и запуск
 
 1. Клонируйте репозиторий:\
-git clone https://github.com/taranastasiia/weather_test_app.git\
+git clone https://github.com/taranastasiia/weather_test_app.git \
 cd weather_test_app 
 
 2. Создайте и активируйте виртуальное окружение:\
