@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Check Weather</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+  </form>
+
+  {% if weather %}
+    <h2>Current Weather for {{ weather.city }}</h2>
+    <p><strong>Temperature:</strong> {{ weather.temperature }}°C</p>
+    <p><strong>Description:</strong> {{ weather.description }}</p>
+  {% endif %}
+
+  <hr>
+
+  <h2>Previous Queries</h2>
+  <ul>
+    {% for q in history %}
+      <li>
+        <strong>{{ q.city }}</strong> —
+        {{ q.temperature }}°C,
+        {{ q.description }} —
+        {{ q.timestamp|date:"Y-m-d H:i" }}
+      </li>
+    {% empty %}
+      <li>No previous queries.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
