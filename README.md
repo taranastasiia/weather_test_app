@@ -17,25 +17,25 @@
 
 ## Установка и запуск
 
-1. Клонируйте репозиторий:
+1. Клонируйте репозиторий:\
 bash
 git clone https://github.com/taranastasiia/weather_test_app.git
 cd weather_test_app 
 
-2. Создайте и активируйте виртуальное окружение
+3. Создайте и активируйте виртуальное окружение
 python -m venv venv
 venv\Script\activate
 
-3. Установите зависимости
+4. Установите зависимости
 pip install -r requirements.txt
 
-4. Настройте базу данных PostgreSQL
+5. Настройте базу данных PostgreSQL
 Создайте базу данных:
 CREATE DATABASE weather_db;
 CREATE USER weather_user WITH PASSWORD 'your_password';
 GRANT ALL PRIVILEGES ON DATABASE weather_db TO weather_user;
 
-5. Настройте переменные окружения
+6. Настройте переменные окружения
 SECRET_KEY='your-django-secret-key'
 OPENWEATHER_API_KEY='your_openweather_api_key'
 NAME='weather_db'
